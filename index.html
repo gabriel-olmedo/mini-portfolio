@@ -12,9 +12,9 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&family=Public+Sans:wght@300;400;800&family=VT323&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/estilos.css">
-
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/estilos.css" />
+    <link rel="stylesheet" href="./src/css/rolagem.css" />
   </head>
   <body>
     <main class="cartao">
@@ -26,33 +26,32 @@
 
       <div class="conteudo">
         <ul class="abas">
-          <li class="aba">
+          <li class="aba selecionado" id="sobre-mim">
             <img src="./src/img/sobre.gif" alt="icone de sobre" />
           </li>
-          <li class="aba">
+          <li class="aba" id="minhas-redes">
             <img src="./src/img/coracao.gif" alt="icone de redes" />
           </li>
         </ul>
 
         <div class="informacoes-abas">
-          <div class="informacao">
+          <div class="informacao selecionado" id="informacao-sobre-mim">
             <h3 class="sub-titulo">Sobre</h3>
 
-            <div>
+            <div class="descricao">
               <p>Oi! Meu nome é Gabriel Olmedo, seja bem-vindo(a)!</p>
 
               <p>
-                Sou uma pessoa apaixonada pela programação desde que eu tinha 15
-                anos. Sempre tive o sonho de trabalhar com programação e
-                atualmente comecei a colocar esse sonho em prática estudando
-                <span>HTML, CSS e JavaScript</span>. Gosto muito de café(até
-                demais), e meus principais hobbies são jogar MMO RPG, ver animes
-                e séries.
+                Sou uma pessoa apaixonado por tecnologia. Sempre tive o sonho de
+                trabalhar com programação e atualmente, com 22 anos, comecei a
+                colocar esse sonho em prática estudando
+                <span>HTML, CSS e JavaScript</span>. Gosto muito de gatos e meus
+                principais hobbies são jogar J-RPG, ver filmes de terror ruins.
               </p>
             </div>
           </div>
 
-          <div class="informacao">
+          <div class="informacao" id="informacao-minhas-redes">
             <h3 class="sub-titulo">Minhas Redes</h3>
 
             <ul class="redes-sociais">
@@ -80,5 +79,6 @@
         </div>
       </div>
     </main>
+    <script src="./src/js/index.js"></script>
   </body>
 </html>
